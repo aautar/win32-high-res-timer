@@ -9,7 +9,8 @@ void main()
 
     Sleep(3000);
 
-	double t = timer.CalcTimeDelta(t1, timer.GetCount());
-    std::cout << "delta = " << t << "\n";
+	double d = timer.CalcTimeDelta(t1, timer.GetCount());
+
+    std::cout << "delta = " << d << "\n";
 
 }
