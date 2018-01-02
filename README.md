@@ -1,4 +1,4 @@
-#win32-high-res-timer
+# win32-high-res-timer
 
 A high-resolution Win32 timer
 
@@ -6,21 +6,20 @@ For details on how this is done, see [Acquiring high-resolution time stamps](htt
 
 ## Usage
 
-```
+```cpp
 #include <iostream>
 #include "../timer.h"
 
 void main()
 {
-	Timer timer;
+    Timer timer;
 
     __int64 t1 = timer.GetCount();
 
     Sleep(3000);
 
-	double d = timer.CalcTimeDelta(t1, timer.GetCount());
+    double d = timer.CalcTimeDelta(t1, timer.GetCount());
 
     std::cout << "delta = " << d << "\n";
-
-}	
+}
 ```
